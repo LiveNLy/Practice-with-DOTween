@@ -1,15 +1,10 @@
 using UnityEngine;
 using DG.Tweening;
 
-public class Mover : MonoBehaviour
+public class Mover : TransformChanger
 {
-    [SerializeField] private Transform _position;
-    [SerializeField] private float _duration;
-    [SerializeField] private int _repeats;
-    [SerializeField] private LoopType _loopType;
-
     private void Start()
     {
-        transform.DOMove(_position.position, _duration).SetLoops(_repeats, _loopType);
+        transform.DOMove(_vector3, _duration).SetLoops(_repeats, _loopType);
     }
 }

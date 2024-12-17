@@ -1,9 +1,8 @@
 using DG.Tweening;
 using UnityEngine;
 
-public class Collorer : MonoBehaviour
+public class Collorer : Changer
 {
-    [SerializeField] private float _duration;
     [SerializeField] private SpriteRenderer _spriteRenderer;
     [SerializeField] private Color _color;
 
